@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#d0cfcf"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/adapter_fragmentme_listitem_imgicon"
+                android:layout_marginLeft="15dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/icon_fm_passwd"/>
+
+            <TextView
+                android:id="@+id/adapter_fragmentme_listitem_txvtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码管理"
+                android:layout_marginLeft="10dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            >
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/adapter_fragmentme_listitem_txvright"
+                android:gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="修改密码"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_fm_jtright_gray"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#d0cfcf"/>
+
+</LinearLayout>

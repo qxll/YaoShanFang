@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#8d84ff">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_fm_location"
+                />
+            <TextView
+                android:textColor="#000"
+                android:text="正在获取位置"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:paddingBottom="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/icon_fm_head"
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="养生汤会员"/>
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_fm_jtright"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/fragmentme_listview_listitem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

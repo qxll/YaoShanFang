@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:background="#f5f5f5"
+        android:layout_above="@id/activity_fragmentmanager_lay_bottom"
+        android:id="@+id/activity_fragmentmanager_framecontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="#fff"
+        android:id="@+id/activity_fragmentmanager_lay_bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+        <LinearLayout
+            android:id="@+id/activity_fragmentmanager_lay_home"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/icon_home_light"/>
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首页"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_fragmentmanager_lay_shop"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/icon_shop_light"/>
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商城"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_fragmentmanager_lay_life"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/icon_life_light"/>
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="品味生活"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_fragmentmanager_lay_me"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/icon_me_light"/>
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商城"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
