@@ -23,10 +23,10 @@ public class ActivityFragmentManager extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragmentmanager);
-//        initStatusBar();
-//        initView();
-//        initEvent();
-//        initFragment();
+        initStatusBar();
+        initView();
+        initEvent();
+        initFragment();
     }
 
     private void initStatusBar(){
