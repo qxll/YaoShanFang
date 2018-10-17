@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -30,6 +31,7 @@ public class FragmentMe extends Fragment {
         view = inflater.inflate(R.layout.fragment_me, null);
         listView = view.findViewById(R.id.fragmentme_listview_listitem);
         initListData();
+        initListData();
         return view;
     }
 
@@ -44,6 +46,16 @@ public class FragmentMe extends Fragment {
         arrayList.add(new BeanMeItemView("登出系统",R.mipmap.icon_fm_exit));
         fragmentMeListViewAdapter = new FragmentMeListViewAdapter(getActivity(), R.layout.adapter_fragmentme_listitem, arrayList);
         listView.setAdapter(fragmentMeListViewAdapter);
+    }
+
+    private void initListListener(){
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                BeanMeItemView beanMeItemView = (BeanMeItemView) parent.getItemAtPosition(position);
+
+            }
+        });
     }
 }
 
