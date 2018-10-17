@@ -42,7 +42,7 @@ public class HeadImageView extends ImageView{
             String tag = attrs.getAttributeName(index);
             if(tag.contains("radius"))
                 if (attrs.getAttributeValue(index).contains("dip"))
-                    radius = (int) (Float.parseFloat(attrs.getAttributeValue(index).replace("dip","")) * getResources().getDisplayMetrics().density);
+                    radius = 1 + (int) (Float.parseFloat(attrs.getAttributeValue(index).replace("dip","")) * getResources().getDisplayMetrics().density);
                 else
                     radius = Float.parseFloat(attrs.getAttributeValue(index));
             if(tag.contains("background"))
@@ -52,7 +52,6 @@ public class HeadImageView extends ImageView{
             if(tag.contains("stroke_width"))
             {
                 stroke_width = Integer.parseInt(attrs.getAttributeValue(index));
-               // Toast.makeText(getContext(),attrs.getAttributeValue(index)+"",Toast.LENGTH_LONG).show();
             }
 
         }
