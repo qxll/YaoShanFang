@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f5f6f8">
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="修改登录密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0a0a09"/>
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_activity_jtleft_blue"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/icon_changpwd_headland"/>
+
+        <cn.food.medicinal.com.yaoshanfang.viewcollection.HeadImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/icon_changpwd_head"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
