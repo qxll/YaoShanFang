@@ -9,9 +9,11 @@ import android.view.ViewGroup;
 
 import cn.food.medicinal.com.yaoshanfang.R;
 
+/**
+ * 品味生活
+ */
 public class FragmentLife extends Fragment {
     private View view;
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {

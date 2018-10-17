@@ -12,11 +12,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
-
 import cn.food.medicinal.com.yaoshanfang.R;
 
+/**
+ * 我的
+ */
 public class FragmentMe extends Fragment {
     private View view;
     private ListView listView;

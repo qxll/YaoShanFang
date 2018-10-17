@@ -9,7 +9,11 @@ import android.view.ViewGroup;
 
 import cn.food.medicinal.com.yaoshanfang.R;
 
+/**
+ * 首页
+ */
 public class FragmentHome extends Fragment {
+
     private View view;
     @Nullable
     @Override
