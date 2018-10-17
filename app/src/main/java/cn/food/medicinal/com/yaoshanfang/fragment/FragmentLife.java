@@ -19,5 +19,6 @@ public class FragmentLife extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_life, null);
         return view;
+        //sisihvihasihb
     }
 }
